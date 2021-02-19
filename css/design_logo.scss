@@ -1,0 +1,229 @@
+@function vw($px) {
+  @return (($px/1920) * 100) + vw;
+}
+
+.epm_standart-button {
+  box-shadow: 0 vw(14) vw(27) rgb(72 55 13 / 40%);
+  z-index: 10;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #f4cc5b;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: vw(29);
+  min-width: vw(143);
+  text-align: center;
+  padding: vw(15) vw(20);
+  font-size: vw(14);
+  line-height: vw(17);
+  font-weight: 700;
+  color: #1d3b54;
+}
+
+.epm_standart-container {
+}
+
+.epm_development {
+  box-sizing: border-box;
+  position: relative;
+  padding: vw(20);
+  background: center / cover url(../images/design_logo/back_main.jpg) no-repeat;
+}
+
+.epm_development-title {
+  display: block;
+  font-size: vw(59);
+  line-height: vw(71);
+  color: #ffffff;
+  text-align: center;
+  font-weight: 400;
+  max-width: vw(800);
+  margin: 0 auto;
+}
+
+.epm_development-title p {
+  display: inline-block;
+  padding: 0 vw(20);
+  margin: vw(5) 0;
+  background-color: rgba(255, 255, 255, 0.39);
+}
+
+.epm_development-bols {
+  position: relative;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: vw(-40);
+}
+
+.epm_development-bols img {
+  display: block;
+  margin-left: vw(133);
+  width: vw(931);
+}
+
+.epm_development-heading {
+  position: absolute;
+  text-align: center;
+  width: vw(260);
+  height: vw(260);
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: vw(-94);
+}
+
+.epm_development-heading p {
+  display: block;
+  margin-bottom: vw(5);
+  font-size: vw(30);
+  line-height: vw(36);
+  color: #13497c;
+  text-align: center;
+  font-weight: 700;
+}
+
+.epm_development-content {
+  position: relative;
+}
+
+.epm_development-desc {
+  text-align: center;
+  margin-top: vw(-95);
+}
+
+.epm_development-desc p {
+  display: block;
+  opacity: 0.35;
+  line-height: vw(31);
+  font-size: vw(26);
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+}
+
+.epm_development-desc p b {
+  display: block;
+  font-size: vw(35);
+  line-height: vw(42);
+}
+
+.epm_development-desc a {
+  opacity: 0.35;
+  font-size: vw(20);
+  color: #ffffff;
+  line-height: vw(24);
+  font-weight: 400;
+}
+
+.epm_development-desc a:hover {
+  color: #000;
+}
+
+.epm_services {
+  padding: vw(30) 0;
+
+  background: center / cover url(../images/design_logo/uslugi2.jpg) no-repeat;
+
+  &-container {
+    position: relative;
+    max-width: vw(1070);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &-title {
+    display: block;
+    text-align: center;
+    font-size: vw(36);
+    font-weight: 400;
+    line-height: vw(43);
+  }
+
+  &-desc {
+    display: block;
+    margin-bottom: vw(10);
+    text-align: center;
+    font-size: vw(20);
+    line-height: vw(24);
+  }
+
+  &-catalog {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: vw(30) auto;
+  }
+
+  &-img {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &-bg {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+  }
+
+  &-item {
+    display: block;
+    width: calc(25% - 60px / 4);
+  }
+
+  &-icon {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &-text {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    line-height: vw(26);
+    font-size: vw(23);
+    text-align: center;
+    font-weight: 700;
+    padding-left: vw(18);
+  }
+
+  &-q {
+    position: relative;
+    display: block;
+    width: vw(18);
+    height: vw(18);
+    margin-left: vw(10);
+
+    b {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: vw(18);
+      height: vw(18);
+      background-color: #c4c4c4;
+      border-radius: 50%;
+      color: #13497c;
+      font-weight: 700;
+      font-size: vw(14);
+      line-height: vw(17);
+    }
+  }
+}
+
+.epm_advantages {
+  position: relative;
+  padding: vw(30) 0;
+  background: center / cover url(../images/design_logo/backgr.jpg) no-repeat;
+}

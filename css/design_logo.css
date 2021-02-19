@@ -1,2 +1,210 @@
+.epm_standart-button {
+  box-shadow: 0 0.7291666667vw 1.40625vw rgba(72, 55, 13, 0.4);
+  z-index: 10;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #f4cc5b;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 1.5104166667vw;
+  min-width: 7.4479166667vw;
+  text-align: center;
+  padding: 0.78125vw 1.0416666667vw;
+  font-size: 0.7291666667vw;
+  line-height: 0.8854166667vw;
+  font-weight: 700;
+  color: #1d3b54;
+}
 
+.epm_development {
+  box-sizing: border-box;
+  position: relative;
+  padding: 1.0416666667vw;
+  background: center/cover url(../images/design_logo/back_main.jpg) no-repeat;
+}
 
+.epm_development-title {
+  display: block;
+  font-size: 3.0729166667vw;
+  line-height: 3.6979166667vw;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 400;
+  max-width: 41.6666666667vw;
+  margin: 0 auto;
+}
+
+.epm_development-title p {
+  display: inline-block;
+  padding: 0 1.0416666667vw;
+  margin: 0.2604166667vw 0;
+  background-color: rgba(255, 255, 255, 0.39);
+}
+
+.epm_development-bols {
+  position: relative;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2.0833333333vw;
+}
+
+.epm_development-bols img {
+  display: block;
+  margin-left: 6.9270833333vw;
+  width: 48.4895833333vw;
+}
+
+.epm_development-heading {
+  position: absolute;
+  text-align: center;
+  width: 13.5416666667vw;
+  height: 13.5416666667vw;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -4.8958333333vw;
+}
+
+.epm_development-heading p {
+  display: block;
+  margin-bottom: 0.2604166667vw;
+  font-size: 1.5625vw;
+  line-height: 1.875vw;
+  color: #13497c;
+  text-align: center;
+  font-weight: 700;
+}
+
+.epm_development-content {
+  position: relative;
+}
+
+.epm_development-desc {
+  text-align: center;
+  margin-top: -4.9479166667vw;
+}
+
+.epm_development-desc p {
+  display: block;
+  opacity: 0.35;
+  line-height: 1.6145833333vw;
+  font-size: 1.3541666667vw;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+}
+
+.epm_development-desc p b {
+  display: block;
+  font-size: 1.8229166667vw;
+  line-height: 2.1875vw;
+}
+
+.epm_development-desc a {
+  opacity: 0.35;
+  font-size: 1.0416666667vw;
+  color: #ffffff;
+  line-height: 1.25vw;
+  font-weight: 400;
+}
+
+.epm_development-desc a:hover {
+  color: #000;
+}
+
+.epm_services {
+  padding: 1.5625vw 0;
+  background: center/cover url(../images/design_logo/uslugi2.jpg) no-repeat;
+}
+.epm_services-container {
+  position: relative;
+  max-width: 55.7291666667vw;
+  margin: 0 auto;
+  text-align: center;
+}
+.epm_services-title {
+  display: block;
+  text-align: center;
+  font-size: 1.875vw;
+  font-weight: 400;
+  line-height: 2.2395833333vw;
+}
+.epm_services-desc {
+  display: block;
+  margin-bottom: 0.5208333333vw;
+  text-align: center;
+  font-size: 1.0416666667vw;
+  line-height: 1.25vw;
+}
+.epm_services-catalog {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 1.5625vw auto;
+}
+.epm_services-img {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.epm_services-bg {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+.epm_services-item {
+  display: block;
+  width: calc(25% - 60px / 4);
+}
+.epm_services-icon {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.epm_services-text {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  line-height: 1.3541666667vw;
+  font-size: 1.1979166667vw;
+  text-align: center;
+  font-weight: 700;
+  padding-left: 0.9375vw;
+}
+.epm_services-q {
+  position: relative;
+  display: block;
+  width: 0.9375vw;
+  height: 0.9375vw;
+  margin-left: 0.5208333333vw;
+}
+.epm_services-q b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.9375vw;
+  height: 0.9375vw;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  color: #13497c;
+  font-weight: 700;
+  font-size: 0.7291666667vw;
+  line-height: 0.8854166667vw;
+}
+
+.epm_advantages {
+  position: relative;
+  padding: 1.5625vw 0;
+  background: center/cover url(../images/design_logo/backgr.jpg) no-repeat;
+}/*# sourceMappingURL=design_logo.css.map */
