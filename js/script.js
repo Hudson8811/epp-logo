@@ -85,3 +85,29 @@ $(document).ready(function() {
 	});
 
 });
+
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 100) $(".epm_development-desc").addClass("is-active");
+    else $(".epm_development-desc").removeClass("is-active");
+});
+
+$('.epm_modal-faq').mouseenter(function(e){
+	const $this = $(this);
+	const $content =  $this.children('.epm_modal-faq-content');
+	const $item = $('.epm_modal-faq-item');
+	const dataTitle = $this.data('title');
+	const dataDesc = $this.data('desc');
+	const title = $('.epm_modal-faq-title');
+	const desc = $('.epm_modal-faq-desc');
+	title.html(dataTitle);
+	desc.html(dataDesc);
+	$content.html($item);
+	$item.show(500);
+	
+});
+
+$('.epm_modal-faq').mouseleave(function(e){
+	$('.epm_modal-faq-item').hide(500);
+});
+

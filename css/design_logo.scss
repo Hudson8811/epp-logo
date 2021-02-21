@@ -147,11 +147,20 @@
 }
 
 .epm_development-desc {
+  position: relative;
+  z-index: 2;
   text-align: center;
   margin-top: vw(-95);
 
   @include tMax {
     margin-top: 0;
+  }
+
+  &.is-active {
+    p,
+    a {
+      opacity: 1;
+    }
   }
 }
 
@@ -163,6 +172,7 @@
   color: #ffffff;
   text-align: center;
   font-weight: 700;
+  transition: opacity 0.9s linear;
 
   @include tMax {
     line-height: vw1(20);
@@ -188,6 +198,7 @@
   color: #ffffff;
   line-height: vw(24);
   font-weight: 400;
+  transition: opacity 0.9s linear;
 
   @include tMax {
     font-size: vw1(16);
@@ -1198,6 +1209,10 @@
     justify-content: stretch;
     align-items: stretch;
 
+    &:hover {
+      z-index: 100;
+    }
+
     @include tMax {
       display: block;
       margin-bottom: vw1(20);
@@ -1229,6 +1244,10 @@
       height: vw(487);
       padding: 0 vw(10) vw(60);
 
+      .epm_services-q b:not(:hover) {
+        background-color: #e1a320;
+      }
+
       @include tMax {
         width: 100%;
         height: auto;
@@ -1245,6 +1264,10 @@
       height: vw(537);
       padding: 0 vw(10) vw(60);
 
+      .epm_services-q b:not(:hover) {
+        background-color: #b1d0f6;
+      }
+
       @include tMax {
         width: 100%;
         height: auto;
@@ -1260,6 +1283,10 @@
       width: vw(250);
       height: vw(537);
       padding: 0 vw(10) vw(60);
+
+      .epm_services-q b:not(:hover) {
+        background-color: #c7b1f6;
+      }
 
       @include tMax {
         width: 100%;
@@ -1375,16 +1402,36 @@
       }
     }
   }
+
+  .epm_services-q {
+    align-self: center;
+    b {
+      color: #ffffff;
+
+      &:hover {
+        background-color: #009245;
+      }
+    }
+  }
 }
 
 .epm_why {
   padding: vw(30) 0 vw(60);
+
+  @include tMax {
+    padding: vw1(30) 0 vw1(60);
+  }
 
   &-catalog {
     margin-top: vw(30);
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
+
+    @include tMax {
+      display: block;
+      margin-top: 0;
+    }
   }
 
   &-item {
@@ -1393,12 +1440,26 @@
     width: 50%;
     padding-bottom: vw(20);
 
+    @include tMax {
+      width: 100%;
+      margin-top: vw1(20);
+      padding-bottom: vw1(20);
+    }
+
     &:first-child {
       border-right: vw(3) solid rgba(19, 73, 124, 0.31);
+
+      @include tMax {
+        border: none;
+      }
     }
 
     &:last-child {
       padding-left: vw(30);
+
+      @include tMax {
+        padding-left: 0;
+      }
 
       .epm_why-heading {
         background-color: #70c45e;
@@ -1414,10 +1475,18 @@
 
       .epm_why-line-abs {
         left: vw(-7);
+
+        @include tMax {
+          display: block;
+        }
       }
 
       .epm_why-line {
         margin-bottom: vw(110);
+
+        @include tMax {
+          margin-bottom: vw1(20);
+        }
       }
     }
   }
@@ -1429,14 +1498,27 @@
     line-height: vw(29);
     font-weight: 700;
     background-color: #f47856;
-    border-radius: 10px;
+    border-radius: vw(10);
     padding: vw(10);
     margin-bottom: vw(30);
+
+    @include tMax {
+      width: max-content;
+      font-size: vw1(16);
+      line-height: vw1(20);
+      border-radius: vw1(10);
+      padding: vw1(5);
+      margin-bottom: vw1(30);
+    }
   }
 
   &-container {
     width: vw(1200);
     margin: 0 auto;
+
+    @include tMax {
+      width: vw1(300);
+    }
   }
 
   &-line {
@@ -1447,12 +1529,22 @@
     margin-bottom: vw(135);
     text-align: left;
 
+    @include tMax {
+      display: block;
+      margin-bottom: vw1(20);
+    }
+
     i {
       display: block;
       color: #f47856;
       text-align: center;
       font-size: vw(24);
       margin: 0 vw(10);
+
+      @include tMax {
+        font-size: vw1(16);
+        margin: vw1(10);
+      }
     }
 
     &-item {
@@ -1465,6 +1557,15 @@
       font-size: vw(20);
       text-align: center;
       font-weight: 400;
+
+      @include tMax {
+        border: vw1(2) solid #f47857;
+        border-radius: vw1(10);
+        padding: vw1(5) vw1(10);
+        line-height: vw1(20);
+        font-size: vw1(16);
+        max-width: 100%;
+      }
     }
 
     &-abs {
@@ -1472,10 +1573,22 @@
       top: 100%;
       left: vw(160);
 
+      @include tMax {
+        position: relative;
+        left: auto;
+      }
+
       img {
         transform: rotate(180deg);
         margin-left: vw(33);
         margin-bottom: vw(-10);
+        width: vw(41);
+
+        @include tMax {
+          margin-left: vw1(33);
+          margin-bottom: vw1(-10);
+          width: vw1(41);
+        }
       }
 
       &-flex {
@@ -1487,11 +1600,20 @@
           color: #f47856;
           text-align: center;
           font-size: vw(43);
+
+          @include tMax {
+            font-size: vw1(43);
+          }
         }
 
         p {
           line-height: vw(24);
           font-size: vw(20);
+
+          @include tMax {
+            line-height: vw1(18);
+            font-size: vw1(14);
+          }
         }
       }
     }
@@ -1506,12 +1628,22 @@
     &-text {
       margin-left: vw(13);
 
+      @include tMax {
+        margin-left: vw1(13);
+      }
+
       h3 {
         display: block;
         margin-bottom: vw(5);
         font-size: vw(24);
         line-height: vw(29);
         font-weight: 700;
+
+        @include tMax {
+          margin-bottom: vw1(5);
+          font-size: vw1(14);
+          line-height: vw1(18);
+        }
       }
 
       p {
@@ -1521,6 +1653,12 @@
         color: #000000;
         font-weight: 400;
         padding-right: vw(20);
+
+        @include tMax {
+          font-size: vw1(14);
+          line-height: vw1(18);
+          padding-right: vw1(20);
+        }
       }
     }
 
@@ -1528,10 +1666,18 @@
       color: #f47856;
       text-align: center;
       font-size: vw(30);
+
+      @include tMax {
+        font-size: vw1(30);
+      }
     }
 
     & + & {
       margin-top: vw(50);
+
+      @include tMax {
+        margin-top: vw1(50);
+      }
     }
   }
 }
@@ -1541,8 +1687,16 @@
   padding: vw(13) 0 vw(30);
   background: center / cover url('../images/design_logo/backgr_gagarin.jpg') no-repeat;
 
+  @include tMax {
+    padding: vw1(13) 0 vw1(30);
+  }
+
   .epm_services-container {
     max-width: vw(1150);
+
+    @include tMax {
+      max-width: vw1(300);
+    }
   }
 
   &:before {
@@ -1554,6 +1708,10 @@
     height: 100%;
     width: vw(1250);
     background: center / cover url(../images/design_logo/black.png) no-repeat;
+
+    @include tMax {
+      display: none;
+    }
   }
 
   .epm_services-title {
@@ -1561,6 +1719,10 @@
     z-index: 5;
     color: #fff;
     margin-bottom: vw(20);
+
+    @include tMax {
+      margin-bottom: vw1(20);
+    }
   }
 
   &-catalog {
@@ -1569,11 +1731,19 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+
+    @include tMax {
+      display: block;
+    }
   }
 
   &-name {
     display: flex;
     margin-top: auto;
+
+    @include tMax {
+      display: block;
+    }
 
     img {
       display: block;
@@ -1581,6 +1751,13 @@
       top: vw(-76);
       left: 0;
       width: vw(484);
+
+      @include tMax {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+      }
     }
 
     span {
@@ -1597,6 +1774,14 @@
       font-weight: 700;
       font-style: italic;
       margin-left: vw(25);
+
+      @include tMax {
+        display: block;
+        padding: vw1(10);
+        font-size: vw1(16);
+        line-height: vw1(20);
+        margin-left: 0;
+      }
     }
   }
 
@@ -1611,12 +1796,24 @@
     margin-left: auto;
     object-fit: cover;
     object-position: center;
+
+    @include tMax {
+      width: vw1(213);
+      height: vw1(213);
+      margin: 0 auto;
+    }
   }
 
   &-text {
     width: vw(460);
     margin-left: vw(30);
     text-align: left;
+
+    @include tMax {
+      width: 100%;
+      margin-left: 0;
+      margin-top: vw1(20);
+    }
 
     p {
       display: block;
@@ -1628,6 +1825,13 @@
       box-sizing: border-box;
       padding: vw(10);
       background-color: rgba(60, 34, 72, 0.92);
+
+      @include tMax {
+        margin-bottom: vw1(20);
+        font-size: vw1(16);
+        line-height: vw1(20);
+        padding: vw1(10);
+      }
     }
   }
 }
@@ -1639,11 +1843,26 @@
   justify-content: center;
   align-items: center;
 
+  @include tMax {
+    display: block;
+    padding: vw1(50) 0;
+    max-width: vw1(300);
+    margin: 0 auto;
+  }
+
   &-title {
     font-size: vw(48);
     color: #000000;
     line-height: vw(58);
     font-weight: 400;
+
+    @include tMax {
+      font-size: vw1(25);
+      color: #000000;
+      line-height: vw1(30);
+      font-weight: 400;
+      margin-bottom: vw1(20);
+    }
 
     b {
       font-weight: inherit;
@@ -1660,6 +1879,14 @@
     font-size: vw(30);
     font-weight: 400;
 
+    @include tMax {
+      width: 100%;
+      text-align: center;
+      margin-left: 0;
+      font-size: vw1(20);
+      line-height: vw1(24);
+    }
+
     &:hover {
       text-decoration: none;
     }
@@ -1670,9 +1897,17 @@
   padding: vw(60) 0 vw(40);
   background: center / cover url(../images/design_logo/armstr.jpg) no-repeat;
 
+  @include tMax {
+    padding: vw1(30) 0 vw1(30);
+  }
+
   &-content {
     max-width: vw(1150);
     margin: 0 auto;
+
+    @include tMax {
+      max-width: vw1(300);
+    }
   }
 
   &-abs {
@@ -1682,6 +1917,12 @@
       margin-bottom: vw(10);
       height: vw(187);
       width: vw(187);
+
+      @include tMax {
+        height: vw1(187);
+        width: vw1(187);
+        margin: 0;
+      }
     }
 
     p {
@@ -1690,12 +1931,22 @@
       line-height: vw(24);
       color: #ffffff;
       font-weight: 700;
+
+      @include tMax {
+        font-size: vw1(18);
+        line-height: vw1(22);
+      }
     }
   }
 
   &-right {
     margin-left: auto;
     max-width: vw(950);
+
+    @include tMax {
+      margin: 0;
+      max-width: 100%;
+    }
   }
 
   &-text {
@@ -1709,6 +1960,14 @@
     font-weight: 400;
     background: center / cover url(../images/design_logo/rax2.png) no-repeat;
 
+    @include tMax {
+      margin-top: vw1(20);
+      padding: vw1(10);
+      margin-bottom: vw1(30);
+      line-height: vw1(20);
+      font-size: vw1(16);
+    }
+
     p:first-child {
       color: #ffff00;
     }
@@ -1718,6 +1977,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include tMax {
+      display: block;
+
+      a {
+        width: 100%;
+      }
+    }
   }
 
   &-phone {
@@ -1732,5 +1999,96 @@
     text-align: center;
     font-weight: 400;
     background-color: rgba(255, 255, 255, 0.58);
+
+    @include tMax {
+      width: 100%;
+      padding: vw1(5) vw1(10);
+      margin-right: 0;
+      line-height: vw1(25);
+      font-size: vw1(20);
+      margin-bottom: vw1(20);
+    }
+  }
+}
+.epm_modal-faq-item {
+  box-sizing: border-box;
+  position: absolute;
+  left: calc(100% + 10px);
+  bottom: calc(100% + 10px);
+  display: none;
+  z-index: 1166;
+  width: vw(300);
+  height: max-content;
+  border-color: #999999;
+  border-radius: vw(15) vw(15) vw(15) 0;
+  background: #ffffff url(../images/design_logo/uslugi2-u9823-fr.jpg) no-repeat center center;
+  background-size: cover;
+  padding: vw(20);
+  text-align: left;
+
+  @include tMax() {
+    display: none !important;
+  }
+
+  p {
+    font-size: vw(14);
+    line-height: (vw(18));
+  }
+
+  p + p {
+    margin-top: vw(20);
+  }
+}
+
+.epm_modal-faq {
+  position: relative;
+}
+
+.epm_tariffs-modal {
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 99;
+  border: 1px solid #999999;
+  background-color: #ffffff;
+  border-radius: vw(15) vw(15) 0px vw(15);
+  padding: vw(10);
+  width: vw(412);
+  right: 100%;
+  bottom: 100%;
+  display: none;
+
+  img {
+    display: block;
+    width: vw(130);
+    margin-right: vw(20);
+    flex-shrink: 0;
+  }
+
+  h3 {
+    display: block;
+    font-size: vw(18);
+    font-weight: 700;
+    line-height: vw(22);
+    color: #6b6b6b;
+  }
+
+  p {
+    display: block;
+    line-height: vw(20);
+    font-size: vw(14);
+    color: #999999;
+  }
+}
+
+.epm_tariffs-catalog {
+  .epm_services-q {
+    b {
+      &:hover + .epm_tariffs-modal {
+        display: flex;
+      }
+    }
   }
 }
