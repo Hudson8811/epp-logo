@@ -2088,6 +2088,10 @@
     b {
       &:hover + .epm_tariffs-modal {
         display: flex;
+
+        @include tMax {
+          display: none;
+        }
       }
     }
   }

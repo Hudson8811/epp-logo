@@ -2090,4 +2090,9 @@
 
 .epm_tariffs-catalog .epm_services-q b:hover + .epm_tariffs-modal {
   display: flex;
+}
+@media (max-width: 1000px) {
+  .epm_tariffs-catalog .epm_services-q b:hover + .epm_tariffs-modal {
+    display: none;
+  }
 }/*# sourceMappingURL=design_logo.css.map */
