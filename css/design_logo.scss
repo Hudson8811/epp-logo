@@ -1114,7 +1114,7 @@
     margin-bottom: vw(10);
 
     @include tMax {
-      margin-bottom: vw1(30);
+      margin-bottom: vw1(10);
     }
 
     li {
@@ -1185,7 +1185,7 @@
     padding-top: vw(30);
 
     @include tMax {
-      margin-bottom: vw1(20);
+      margin-bottom: vw1(10);
       font-size: vw1(22);
       line-height: vw1(26);
       padding-top: vw1(30);
@@ -1248,7 +1248,6 @@
     }
 
     @include tMax {
-      display: block;
       margin-bottom: vw1(20);
     }
 
@@ -1264,8 +1263,9 @@
 
       @include tMax {
         width: 100%;
-        height: auto;
+        height: vw1(480);
         padding: vw1(10) vw1(20);
+        padding-bottom: vw1(40);
       }
 
       .epm_tariffs-planet {
@@ -1288,8 +1288,13 @@
 
       @include tMax {
         width: 100%;
-        height: auto;
+        height: vw1(606);
         padding: vw1(10) vw1(20);
+        padding-bottom: vw1(60);
+
+        .epm_tariffs-title {
+          margin-bottom: vw1(20);
+        }
       }
 
       .epm_tariffs-planet {
@@ -1308,8 +1313,9 @@
 
       @include tMax {
         width: 100%;
-        height: auto;
+        height: vw1(470);
         padding: vw1(10) vw1(20);
+        padding-bottom: vw1(40);
       }
 
       .epm_tariffs-planet {
@@ -1328,8 +1334,13 @@
 
       @include tMax {
         width: 100%;
-        height: auto;
+        height: vw1(508);
         padding: vw1(10) vw1(20);
+        padding-bottom: vw1(40);
+
+        .epm_tariffs-title {
+          margin-bottom: vw1(10);
+        }
       }
 
       .epm_tariffs-bg {

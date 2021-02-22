@@ -1122,7 +1122,7 @@
 }
 @media (max-width: 1000px) {
   .epm_tariffs-list {
-    margin-bottom: 9.375vw;
+    margin-bottom: 3.125vw;
   }
 }
 .epm_tariffs-list li {
@@ -1192,7 +1192,7 @@
 }
 @media (max-width: 1000px) {
   .epm_tariffs-price {
-    margin-bottom: 6.25vw;
+    margin-bottom: 3.125vw;
     font-size: 6.875vw;
     line-height: 8.125vw;
     padding-top: 9.375vw;
@@ -1250,7 +1250,6 @@
 }
 @media (max-width: 1000px) {
   .epm_tariffs-item {
-    display: block;
     margin-bottom: 6.25vw;
   }
 }
@@ -1266,8 +1265,9 @@
 @media (max-width: 1000px) {
   .epm_tariffs-item:nth-child(1) {
     width: 100%;
-    height: auto;
+    height: 150vw;
     padding: 3.125vw 6.25vw;
+    padding-bottom: 12.5vw;
   }
 }
 .epm_tariffs-item:nth-child(1) .epm_tariffs-planet {
@@ -1287,8 +1287,12 @@
 @media (max-width: 1000px) {
   .epm_tariffs-item:nth-child(2) {
     width: 100%;
-    height: auto;
+    height: 189.375vw;
     padding: 3.125vw 6.25vw;
+    padding-bottom: 18.75vw;
+  }
+  .epm_tariffs-item:nth-child(2) .epm_tariffs-title {
+    margin-bottom: 6.25vw;
   }
 }
 .epm_tariffs-item:nth-child(2) .epm_tariffs-planet {
@@ -1305,8 +1309,9 @@
 @media (max-width: 1000px) {
   .epm_tariffs-item:nth-child(3) {
     width: 100%;
-    height: auto;
+    height: 146.875vw;
     padding: 3.125vw 6.25vw;
+    padding-bottom: 12.5vw;
   }
 }
 .epm_tariffs-item:nth-child(3) .epm_tariffs-planet {
@@ -1323,8 +1328,12 @@
 @media (max-width: 1000px) {
   .epm_tariffs-item:nth-child(4) {
     width: 100%;
-    height: auto;
+    height: 158.75vw;
     padding: 3.125vw 6.25vw;
+    padding-bottom: 12.5vw;
+  }
+  .epm_tariffs-item:nth-child(4) .epm_tariffs-title {
+    margin-bottom: 3.125vw;
   }
 }
 .epm_tariffs-item:nth-child(4) .epm_tariffs-bg {
