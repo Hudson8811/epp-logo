@@ -111,3 +111,11 @@ $('.epm_modal-faq').mouseleave(function(e){
 	$('.epm_modal-faq-item').hide(500);
 });
 
+$("a.scrollto").click(function(e) {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 800);
+    return false;
+  });

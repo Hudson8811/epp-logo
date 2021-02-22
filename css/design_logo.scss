@@ -123,6 +123,12 @@
     width: vw1(90);
     height: vw1(90);
     margin-top: vw1(-37);
+
+    a {
+      min-width: 1px;
+      padding: vw1(4) vw1(7);
+      font-size: vw1(10);
+    }
   }
 }
 
@@ -137,8 +143,8 @@
 
   @include tMax {
     margin-bottom: vw1(5);
-    font-size: vw1(20);
-    line-height: vw1(26);
+    font-size: vw1(10);
+    line-height: vw1(14);
   }
 }
 
@@ -277,6 +283,9 @@
     margin-bottom: vw(20);
 
     @include tMax {
+      max-width: 75%;
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: vw1(20);
     }
   }
@@ -320,7 +329,7 @@
     @include tMax {
       line-height: vw1(22);
       font-size: vw1(18);
-      padding-left: vw1(18);
+      padding-left: 0;
     }
   }
 
@@ -330,6 +339,7 @@
     width: vw(18);
     height: vw(18);
     margin-left: vw(10);
+    margin-bottom: vw(3);
 
     @include tMax {
       margin-left: vw1(10);
@@ -375,6 +385,10 @@
 
   &-content {
     position: relative;
+  }
+
+  &-num {
+    font-family: 'Open Sans', sans-serif;
   }
 
   &-text {
@@ -688,6 +702,18 @@
 
   @include tMax {
     padding: vw1(30) 0 vw1(70);
+
+    .epm_services-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: stretch;
+      align-items: stretch;
+    }
+
+    .epm_standart-button {
+      order: 8;
+      margin-top: vw1(20);
+    }
   }
 
   .epm_services-title {
@@ -726,8 +752,11 @@
 
     @include tMax {
       top: auto;
-      right: vw1(15);
-      bottom: vw1(-50);
+      right: auto;
+      position: relative;
+      order: 7;
+      bottom: auto;
+      width: vw1(100);
       padding: vw1(5) vw1(10);
       font-size: vw1(14);
       line-height: vw1(17);
@@ -801,6 +830,7 @@
   @include tMax {
     left: auto;
     top: auto;
+    order: 2;
   }
 }
 
@@ -811,6 +841,7 @@
   @include tMax {
     right: auto;
     top: auto;
+    order: 5;
   }
 }
 
@@ -821,6 +852,7 @@
   @include tMax {
     left: auto;
     top: auto;
+    order: 4;
   }
 }
 
@@ -836,6 +868,7 @@
     left: auto;
     top: auto;
     bottom: auto;
+    order: 3;
   }
 
   p {
@@ -854,6 +887,7 @@
   @include tMax {
     left: auto;
     top: auto;
+    order: 1;
   }
 }
 
@@ -1063,7 +1097,7 @@
     line-height: vw(23);
     font-weight: 400;
     padding: vw(5) 0;
-    margin-bottom: vw(20);
+    margin-bottom: vw(10);
 
     @include tMax {
       font-size: vw1(19);
@@ -1077,7 +1111,7 @@
     text-align: left;
     position: relative;
     z-index: 2;
-    margin-bottom: vw(30);
+    margin-bottom: vw(10);
 
     @include tMax {
       margin-bottom: vw1(30);
@@ -1144,7 +1178,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: vw(20);
+    margin-bottom: vw(10);
     font-size: vw(22);
     line-height: vw(26);
     font-weight: 300;
@@ -1224,9 +1258,9 @@
     }
 
     &:nth-child(1) {
-      width: vw(213);
-      height: vw(353);
-      padding: 0 vw(10) vw(50);
+      width: vw(230);
+      height: vw(390);
+      padding: 0 vw(10) vw(40);
 
       @include tMax {
         width: 100%;
@@ -1242,7 +1276,11 @@
     &:nth-child(2) {
       width: vw(236);
       height: vw(487);
-      padding: 0 vw(10) vw(60);
+      padding: 0 vw(10) vw(48);
+
+      .epm_tariffs-title {
+        margin-bottom: vw(30);
+      }
 
       .epm_services-q b:not(:hover) {
         background-color: #e1a320;
@@ -1262,7 +1300,7 @@
     &:nth-child(3) {
       width: vw(250);
       height: vw(537);
-      padding: 0 vw(10) vw(60);
+      padding: 0 vw(10) vw(48);
 
       .epm_services-q b:not(:hover) {
         background-color: #b1d0f6;
@@ -1282,7 +1320,7 @@
     &:nth-child(4) {
       width: vw(250);
       height: vw(537);
-      padding: 0 vw(10) vw(60);
+      padding: 0 vw(10) vw(48);
 
       .epm_services-q b:not(:hover) {
         background-color: #c7b1f6;
@@ -1813,6 +1851,13 @@
       width: 100%;
       margin-left: 0;
       margin-top: vw1(20);
+
+      a {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: vw1(143);
+      }
     }
 
     p {
